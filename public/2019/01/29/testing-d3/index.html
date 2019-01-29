@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.31" />
+
+
+<title>Testing D3 - Olivia Brode-Roger</title>
+<meta property="og:title" content="Testing D3 - Olivia Brode-Roger">
+
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico">
+
+
+  
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/profile.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+  <a href="../../../../" class="nav-title">
+    <h1> Olivia Brode-Roger </h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/nibrivia/">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/nibrivia/">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    <span class="article-duration">165 words (1 min)</span>
+
+    <h1 class="article-title">Testing D3</h1>
+
+    <span class="article-author">
+        Olivia Brode-Roger
+    </span>
+
+    <span class="article-date">
+        <em>Tuesday Jan 29, 2019</em> <br>
+    </span>
+
+    <div class="article-content">
+      
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<p>Hey hey</p>
+
+<p>Let&rsquo;s try some d3?</p>
+
+<h1 id="circle">Circle</h1>
+
+<div id="play" width="500px" heigh="100px">
+</div>
+
+<script>
+d3.select("#play")
+  .append("svg")
+  .attr("width", 50)
+  .attr("height", 50)
+  .append("circle")
+  .attr("cx", 25)
+  .attr("cy", 25)
+  .attr("r", 25)
+  .style("fill", "purple")
+</script>
+
+<h1 id="chart">Chart</h1>
+
+<style>
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+</style>
+
+<div class="chart"></div>
+
+<script>
+var data = [1, 1, 2, 3, 5, 8, 13];
+
+
+var data_scale = d3.scaleLinear().domain([0, d3.max(data)])
+  .range([0, 420])
+d3.select(".chart")
+  .selectAll("div")
+    .data(data)
+  .enter().append("div")
+    .style("width", function(d) { return data_scale(d) + "px"})
+    .text(function(d) { return d})
+</script>
+
+<h1 id="chart-svg-edition">Chart (svg edition)</h1>
+
+<p><svg class="svg-chart"></svg></p>
+
+<style>
+
+.svg-chart rect {
+  fill: steelblue;
+}
+
+.svg-chart text {
+  fill: white;
+  text-anchor: end;
+  font: 10px sans-serif;
+}
+
+</style>
+
+<script>
+var width = 420,
+    barHeight = 20;
+    
+var data = [1, 1, 2, 3, 5, 8, 13];
+
+var data_scale = d3.scaleLinear()
+              .domain([0, d3.max(data)])
+              .range([0, width]);
+
+var chart = d3.select(".svg-chart")
+              .attr("width", width)
+              .attr("height", barHeight*data.length);
+
+var bar = chart.selectAll("g")
+  .data(data)
+  .enter().append("g")
+    .attr("transform", function(d, i) {return "translate(0," + i*barHeight + ")"});
+    
+bar.append("rect")
+  .attr("width", data_scale)
+  .attr("height", barHeight - 1);
+
+bar.append("text")
+
+  .attr("x", function(d) {return data_scale(d) - 3})
+  .attr("y", barHeight / 2)
+  .attr("dy", ".35em")
+  .text(function(d) { return d; })
+  
+</script>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+  </body>
+</html>
+
