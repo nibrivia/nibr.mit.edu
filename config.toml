@@ -1,0 +1,35 @@
+baseurl = "https://nibr.mit.edu/"
+#relativeurls = false
+relativeurls = true
+languageCode = "en-us"
+title = "Olivia Brode-Roger"
+theme = "hugo-lithium"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+canonifyURLs = true
+
+PygmentsCodeFences = true
+PygmentsStyle = "tango"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/nibrivia/"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/nibrivia/"
+
+[params]
+    description = "Olivia's personal page"
+
+    [params.logo]
+    url = "profile.jpg"
+    width = 50
+    height = 50
+    alt = "Logo"
+
