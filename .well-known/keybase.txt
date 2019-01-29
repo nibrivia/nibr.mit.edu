@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nibrivia
+--------------------------------------------------------------------
+
+I hereby claim:
+
+* I am an admin of http://nibr.mit.edu
+* I am nibrivia (https://keybase.io/nibrivia) on keybase.
+* I have a public key ASCFrbfAIJu3SCPMqTnRU-IZRLdI8i-z-dJd1AaUnpEcLQo
+
+To do so, I am signing this object:
+
+{
+"body": {
+"key": {
+"eldest_kid": "0101604c81feea7cde3b6e2d032c58310cb44e114bf52bded49404f7dd67cedab4e90a",
+"host": "keybase.io",
+"kid": "012085adb7c0209bb74823cca939d153e21944b748f22fb3f9d25dd406949e911c2d0a",
+"uid": "e4e15f41e7cc6e98c95a0452a7b27c19",
+"username": "nibrivia"
+},
+"merkle_root": {
+"ctime": 1529948392,
+"hash": "80b5130b2d3e9d60b2fd2f8e027c5d05941f31ae45ed22ba1dbee55762480f8eea87976bb10bbe8026b57d4b158beeebb2f0630d22640777cbd71139f466c743",
+"hash_meta": "665c85590d71e9f15e148d5544b561fb3f4556cfe49ec3f5d9680dd532bb4863",
+"seqno": 3140156
+},
+"service": {
+"entropy": "qmMqiVtGEhghFf9V46FBo3nV",
+"hostname": "nibr.mit.edu",
+"protocol": "http:"
+},
+"type": "web_service_binding",
+"version": 2
+},
+"client": {
+"name": "keybase.io go client",
+"version": "2.1.0"
+},
+"ctime": 1529948415,
+"expire_in": 504576000,
+"prev": "9dee391d24f40e43ff362c497c144ae9b7660aed812d2de86ebeed6f45f8501a",
+"seqno": 14,
+"tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgha23wCCbt0gjzKk50VPiGUS3SPIvs/nSXdQGlJ6RHC0Kp3BheWxvYWTESpcCDsQgne45HST0DkP/NixJfBRK6bdmCu2BLS3obr7tb0X4UBrEIIxvdQhldzY2rM3E8Mq9x+hj/aiaSuY5ZLwMSTUiQ3nAAgHCo3NpZ8RANDjXKpRT27oWT7uWNTNRLGr6s6f9PnnJ5nc56P2YAnhxZAs46V8CkzRBjzyyeMvmWkb53AA1mjdILO3sVi+HB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOVqV4/m1medehSYPZgnZTCDaTkFDlYEyZMqJgy3H0fTo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nibrivia
+
+==================================================================
