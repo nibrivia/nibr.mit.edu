@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Olivia Brode-Roger</title>
-    <link>/</link>
-    <description>Recent content on Olivia Brode-Roger</description>
+    <title>Web-tests on Olivia Brode-Roger</title>
+    <link>/web-tests/</link>
+    <description>Recent content in Web-tests on Olivia Brode-Roger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/web-tests/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About me</title>
-      <link>/about/</link>
-      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I am an MEng student in Computer Science at MIT, with an expected graduation date of June 2020.
-Teaching  6.033 Computer Systems Engineering:  Instructor-G: Spring &amp;lsquo;19  6.004 Computation Structures:  Teaching Assistant: Fall &amp;lsquo;15, Spring &amp;lsquo;16, Fall &amp;lsquo;17, Spring &amp;lsquo;18, Fall &amp;lsquo;18 Off-semester work: Summer &amp;lsquo;16, January &amp;lsquo;18, Summer &amp;lsquo;18 Teaching Assistant (EdX): Spring &amp;lsquo;15 Lab Assistant: Fall &amp;lsquo;14  6.S098 Introduction to R for Data Science:  Instructor: January &amp;lsquo;18   Course evaluations (MIT only)</description>
-    </item>
     
     <item>
       <title>Inputting data into D3...</title>
