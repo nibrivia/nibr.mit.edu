@@ -6,10 +6,21 @@
     <description>Recent content in Web-tests on Olivia Brode-Roger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jan 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/web-tests/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TCP</title>
+      <link>/web-tests/d3-tcp/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/web-tests/d3-tcp/</guid>
+      <description>Here I&amp;rsquo;m just playing around with D3, trying to get a basic TCP request animation to work.
+
+ rect { fill: steelblue; } circle { fill: steelblue; } .sender circle { fill: orange; } .receiver circle { fill: steelblue; } text { fill: white; text-anchor: end; font: 10px sans-serif; }   var width = 420, height = 420; var tcp_send = [1, 1, 2, 3, 5, 8], lag = 1; // Setup var chart = d3.</description>
+    </item>
     
     <item>
       <title>Inputting data into D3...</title>

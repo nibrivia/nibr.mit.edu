@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.31" />
+
+
+<title>TCP - Olivia Brode-Roger</title>
+<meta property="og:title" content="TCP - Olivia Brode-Roger">
+
+
+<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+
+
+  
+
+
+
+
+
+<link rel="stylesheet" href="../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/profile.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+  <a href="../../" class="nav-title">
+    <h1> Olivia Brode-Roger </h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../about/">About</a></li>
+    
+    <li><a href="https://github.com/nibrivia/">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/nibrivia/">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    <span class="article-duration">196 words (1 min)</span>
+
+    <h1 class="article-title">TCP</h1>
+
+    <span class="article-author">
+        Olivia Brode-Roger
+    </span>
+
+    <span class="article-date">
+        <em>Wednesday Jan 30, 2019</em> <br>
+    </span>
+
+    <div class="article-content">
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+
+<p>Here I&rsquo;m just playing around with D3, trying to get a basic TCP request animation to work.</p>
+
+<p><svg class="waterfall"></svg></p>
+
+<style>
+
+rect {
+  fill: steelblue;
+}
+circle {
+  fill: steelblue;
+}
+
+.sender circle {
+    fill: orange;
+}
+.receiver circle {
+    fill: steelblue;
+}
+
+text {
+  fill: white;
+  text-anchor: end;
+  font: 10px sans-serif;
+}
+
+</style>
+
+<script>
+var width  = 420,
+    height = 420;
+
+var tcp_send = [1, 1, 2, 3, 5, 8],
+    lag = 1;
+
+
+// Setup
+var chart = d3.select(".waterfall")
+              .attr("height", height)
+              .attr("width", width);
+
+function addNode(chart, name, x, y) {
+    var node = chart.append("g")
+                          .attr("transform", "translate(" + x +", " + y + ")")
+                          .attr("class", name)
+    node.append("circle")
+            .attr("r",  20)
+
+    node.append("text")
+            .attr("dy", ".35em")
+            .attr("dx", ".25em")
+            .text(name[0].toUpperCase())
+
+    return node;
+
+}
+
+sender   = addNode(chart, "sender",     width/4, height/2)
+receiver = addNode(chart, "receiver", 3*width/4, height/2)
+
+
+function drawData(data) {
+    console.log(data);
+
+    var data_scale = d3.scaleLinear()
+                  .domain([0, d3.max(data)])
+                  .range([height-20, 20]);
+
+    var bars = chart.selectAll("g")
+      .data(data);
+
+    bars.exit().remove();
+
+    var new_bars = bars.enter()
+        .append("g")
+            .attr("transform", function(d, i) {return "translate(" + i*barWidth + ", 0)"});
+
+    new_bars.append("circle")
+        .merge(bars.select("circle"))
+            .attr("cy", data_scale)
+            .attr("cx", 10)
+            .attr("r", 10)
+
+    new_bars.append("text")
+        .merge(bars.select("text"))
+        .attr("y", function(d) {return data_scale(d) + 3})
+        .attr("x", barWidth / 2)
+        .attr("dx", ".50em")
+        .text(function(d) { return d; });
+}
+
+
+function updateData() {
+    console.log("hey!");
+    var new_value = +d3.select("#new_data").node().value;
+    console.log(new_value);
+    addData(new_value);
+};
+
+</script>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+  </body>
+</html>
+
