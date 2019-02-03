@@ -1,0 +1,20 @@
+rect {
+  fill: steelblue;
+}
+circle {
+  fill: steelblue;
+}
+
+.client circle {
+    fill: orange;
+}
+.server circle {
+    fill: steelblue;
+}
+
+text {
+  fill: white;
+  text-anchor: end;
+  font: 10px sans-serif;
+}
+
