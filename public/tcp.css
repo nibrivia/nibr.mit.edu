@@ -1,20 +1,33 @@
+/* Defaults */
 rect {
   fill: steelblue;
 }
 circle {
   fill: steelblue;
 }
+text {
+  fill: white;
+  text-anchor: middle;
+  font: 10px sans-serif;
+}
 
+/* Nodes */
 .client circle {
     fill: orange;
+}
+.explain text {
+    fill: black;
 }
 .server circle {
     fill: steelblue;
 }
 
-text {
-  fill: white;
-  text-anchor: end;
-  font: 10px sans-serif;
+/* Packets */
+.packet circle {
+    fill: red;
 }
+.packet text {
+    fill: white;
+}
+
 
