@@ -8,6 +8,8 @@ I am an MEng student in Computer Science at MIT, with an expected graduation dat
 
 # Teaching
 
+- [6.02 Intro to EECS via Digital Communications](https://visor.mit.edu/6.02/f2019):
+  - Instructor-G: Fall '19 (current)
 - [6.033 Computer Systems Engineering](http://web.mit.edu/6033/www/):
   - Instructor-G: Spring '19
 - [6.004 Computation Structures](https://6004.mit.edu):
