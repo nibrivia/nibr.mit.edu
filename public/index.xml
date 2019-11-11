@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Olivia Brode-Roger</title>
-    <link>/</link>
+    <link>https://nibr.mit.edu/</link>
     <description>Recent content on Olivia Brode-Roger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://nibr.mit.edu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TCP</title>
-      <link>/tcp/d3-tcp/</link>
+      <link>https://nibr.mit.edu/tcp/d3-tcp/</link>
       <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tcp/d3-tcp/</guid>
+      <guid>https://nibr.mit.edu/tcp/d3-tcp/</guid>
       <description>
 Here I&amp;rsquo;m just playing around with D3, trying to get a basic TCP request animation to work.
 Send packet 
@@ -25,20 +25,20 @@ Send packet
     
     <item>
       <title>About me</title>
-      <link>/about/</link>
+      <link>https://nibr.mit.edu/about/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://nibr.mit.edu/about/</guid>
       <description>I am an MEng student in Computer Science at MIT, with an expected graduation date of June 2020.
-Teaching  6.033 Computer Systems Engineering:  Instructor-G: Spring &amp;lsquo;19  6.004 Computation Structures:  Teaching Assistant: Fall &amp;lsquo;15, Spring &amp;lsquo;16, Fall &amp;lsquo;17, Spring &amp;lsquo;18, Fall &amp;lsquo;18 Off-semester work: Summer &amp;lsquo;16, January &amp;lsquo;18, Summer &amp;lsquo;18 Teaching Assistant (EdX): Spring &amp;lsquo;15 Lab Assistant: Fall &amp;lsquo;14  6.S098 Introduction to R for Data Science:  Instructor: January &amp;lsquo;18   Course evaluations (MIT only)</description>
+Teaching  6.02 Intro to EECS via Digital Communications:  Instructor-G: Fall &amp;lsquo;19 (current)  6.033 Computer Systems Engineering:  Instructor-G: Spring &amp;lsquo;19  6.004 Computation Structures:  Teaching Assistant: Fall &amp;lsquo;15, Spring &amp;lsquo;16, Fall &amp;lsquo;17, Spring &amp;lsquo;18, Fall &amp;lsquo;18 Off-semester work: Summer &amp;lsquo;16, January &amp;lsquo;18, Summer &amp;lsquo;18 Teaching Assistant (EdX): Spring &amp;lsquo;15 Lab Assistant: Fall &amp;lsquo;14  6.</description>
     </item>
     
     <item>
       <title>Inputting data into D3...</title>
-      <link>/web-tests/d3-input/</link>
+      <link>https://nibr.mit.edu/web-tests/d3-input/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/web-tests/d3-input/</guid>
+      <guid>https://nibr.mit.edu/web-tests/d3-input/</guid>
       <description>Here I&amp;rsquo;m just playing around with D3, hopefully getting some user input in.
 Chart (svg edition) Next data point Submit
 
@@ -47,10 +47,10 @@ Chart (svg edition) Next data point Submit
     
     <item>
       <title>Testing D3</title>
-      <link>/web-tests/testing-d3/</link>
+      <link>https://nibr.mit.edu/web-tests/testing-d3/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/web-tests/testing-d3/</guid>
+      <guid>https://nibr.mit.edu/web-tests/testing-d3/</guid>
       <description>I&amp;rsquo;m just rougly following Mike Bostock&amp;rsquo;s barchart D3 tutorial. There isn&amp;rsquo;t a ton to see here&amp;hellip;
 Circle   d3.select(&#34;#play&#34;) .append(&#34;svg&#34;) .attr(&#34;width&#34;, 50) .attr(&#34;height&#34;, 50) .append(&#34;circle&#34;) .attr(&#34;cx&#34;, 25) .attr(&#34;cy&#34;, 25) .attr(&#34;r&#34;, 25) .style(&#34;fill&#34;, &#34;purple&#34;)  Chart  .chart div { font: 10px sans-serif; background-color: steelblue; text-align: right; padding: 3px; margin: 1px; color: white; }    var data = [1, 1, 2, 3, 5, 8, 13]; var data_scale = d3.</description>
     </item>

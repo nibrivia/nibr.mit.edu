@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TCPs on Olivia Brode-Roger</title>
-    <link>/tcp/</link>
+    <link>https://nibr.mit.edu/tcp/</link>
     <description>Recent content in TCPs on Olivia Brode-Roger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/tcp/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://nibr.mit.edu/tcp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TCP</title>
-      <link>/tcp/d3-tcp/</link>
+      <link>https://nibr.mit.edu/tcp/d3-tcp/</link>
       <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tcp/d3-tcp/</guid>
+      <guid>https://nibr.mit.edu/tcp/d3-tcp/</guid>
       <description>
 Here I&amp;rsquo;m just playing around with D3, trying to get a basic TCP request animation to work.
 Send packet 
